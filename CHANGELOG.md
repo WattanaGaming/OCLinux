@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+# [1.0.0] - 2021-04-05
+### Added
+- You can now pass arguments into processes spawned by `dofileThreaded` via an option table parameter "`argument`"
+
+### Changed
+- The scheduler now clear thread arguments after the initial thread execution.
+- Moved `system.kernel.thread` to `os.thread`.
+- Remade the basic display functionalities of the kernel and moved them over to `os.simpleDisplay`.
+- Moved kernel module management to `os.kernel`.
+- Moved `system.kernel.readfile` to `os.kernel.readfile`.
+
+### Removed
+- Removed the `system` table.
+
 ## [0.1.0] - 2021-02-28
 ### Added
 - Introduced CHANGELOG.md with semantic versioning.
